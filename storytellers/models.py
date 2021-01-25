@@ -14,7 +14,7 @@ class PublishedManager(models.Manager):
 class Post(models.Model):
     STATUS_CHOICES = (
         ('draft', 'Draft'),
-        ('publishd', 'Publisherd'),
+        ('published', 'Published'),
     )
 
     title = models.CharField(max_length = 255)

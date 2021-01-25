@@ -14,5 +14,5 @@ def post_detail(request, year, month, day, Post):
                                     publish_month = month,
                                     publish_day= day)
     return render(request,
-                 'storytellers/post/detail.html',
+                 'storytellers/post/list.html',
                  {'post': post})
