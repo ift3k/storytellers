@@ -33,9 +33,9 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('storytellers:post_detail',
-                        args=[self__publish.year,
-                             self__publish.month,
-                             self__publish.day, self__slug])
+                                    args=[self.publish.year,
+                                    self.publish.month,
+                                    self.publish.day, self.slug])
 
     class Meta:
         ordering = ('-publish',)
